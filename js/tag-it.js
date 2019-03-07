@@ -351,7 +351,7 @@
             }
             // Animate the removal.
             if (animate) {
-                tag.fadeOut('fast').hide('blind', {direction: 'horizontal'}, 'fast', function(){
+                tag.fadeOut('fast', 'swing').hide('fast', 'swing', function(){
                     tag.remove();
                 }).dequeue();
             } else {
